@@ -1,0 +1,87 @@
+h1 {
+    font-family: Nova Cut;
+    font-size: 110px;
+    font-weight: 400;
+    margin-bottom: 13px;
+    margin-left: -13px;
+    color: #F2E8D2;
+}
+
+p {
+    font-family: Nova Flat;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.headers {
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.main-block {
+    padding-top: 213px;
+    padding-left: 10%;
+
+}
+
+.main-rect {
+    margin-top: -13px;
+    margin-bottom: 54px;
+    margin-left: -40px;
+    width: 713px;
+    height: 13px;
+    background: #F2E8D2;
+}
+
+.main-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 8px; 
+    text-align: left;
+}
+
+
+.blink_me {
+    margin-left: -20px;
+    margin-bottom: -5px;
+    display: inline-block;
+    width: 7px;
+    height: 110px;
+    background: white;
+    animation: blinker 1.2s linear infinite;
+}
+  
+@keyframes blinker {
+    from, to {
+        background: transparent;
+      }
+      50% {
+        background: white;
+      }
+}
+
+@media only screen and (max-width: 760px) {
+    h1 {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 14.5vw;
+    }
+
+    .main-rect {
+        width: 87vw;
+        margin-right: 20px;
+        margin-left: -10px;
+    }
+
+    .main-text {
+        margin-left: -20px;
+        text-align: center;
+        font-size: 2.8vw;
+    }
+}
